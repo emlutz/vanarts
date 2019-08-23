@@ -1,0 +1,140 @@
+header {
+  margin: 0 auto;
+  background-image: url('../imgs/ocean.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 35vh;
+  @media (max-width: 1400px) {
+    background-size: cover;
+  }
+  @media (max-width: 560px) {
+    height: 20vh;
+  }
+  h1, h2 {
+    color: $brand-primary;
+  }
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    @media (max-width: 900px) {
+      flex-flow: row wrap;
+    }
+    justify-content: space-between;
+    padding: 30px;
+    #menuIcon {
+      display: none;
+      @media (max-width: 760px) {
+        display: block;
+        color: floralwhite;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 25px;
+        &:hover {
+          color: darken($brand-primary, 20%);
+        }
+        span {
+          background: none;
+        }
+      }
+    }
+    #sm_menu {
+      width: 0px;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0px;
+      right: -50px;
+      background-color: $brand-primary;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding: 50px 20px;
+      .closebtn {
+        font-size: $sm-hd;
+        font-weight: 700;
+      }
+      a {
+        margin: 10px 0;
+      }
+    }
+    a.big_menu {
+      @media (max-width: 760px) {
+        display: none;
+      }
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 25px;
+      color: floralwhite;
+      display: block;
+      transition: 0.8s;
+      &:hover {
+        color: darken($brand-primary, 20%);
+      }
+      img {
+        max-width: 200px;
+        &:hover {
+        filter: brightness(110%);
+        }
+        @media (max-width: 550px) {
+          max-width: 150px;
+        }
+      }
+      span {
+        background: $brand-extra;
+        padding: 5px 10px;
+        border-radius: 50%;
+      }
+    }
+    .menu {
+      #nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 260px;
+        a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: white;
+          display: block;
+          transition: 0.8s;
+          &:hover {
+            color: #FFFACD;
+          
+          }
+        }
+        .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        @media (max-height: 450px) {
+          padding-top: 15px;
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+      span {
+        font-size: 50px;
+        cursor: pointer;
+      }
+    }
+    .logo {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+}

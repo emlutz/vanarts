@@ -1,0 +1,53 @@
+section.hero {
+  .heading {
+    h2 {
+      span {
+        font-size: 110%;
+      }
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+  .categories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .category {
+      position: relative;
+      width: 25%;
+      margin: 2px;
+      @media (max-width: 900px) {
+        width: 48%;
+      }
+      @media (max-width: 900px) {
+        width: 100%;
+      } 
+      a {
+        transition: all 1s ease;
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-transform: uppercase;
+          font-size: $lg-hd;
+          font-weight: 700;
+          text-align: center;
+          background: rgba(floralwhite, 0.2);
+        }
+        img {
+          transition: all 1s ease;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        &:hover {
+          img {
+              filter: brightness(130%);
+            }
+        }
+      }
+    }
+  }
+}

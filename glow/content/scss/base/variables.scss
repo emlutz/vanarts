@@ -1,0 +1,30 @@
+$brand-primary: #ffbfb7;
+$brand-secondary: #1a281f;
+$brand-extra: #ffe851;
+$brand-highlight: #757780;
+$cta: #001627;
+
+$background: #fffaf0;
+$background-highlight: darken($background, 3%);
+
+$hd-color: $brand-primary;
+$copy-color: #1f1f1f;
+$copy-highlight: #fd3a4a;
+
+// FONTS$
+$hd-font: 'Muli', sans-serif;
+$copy-font: 'Muli', sans-serif;
+$decorative-font: 'Muli', sans-serif;
+
+$xs-copy: 10px;
+$sm-copy: 13px;
+$md-copy: 16px;
+$lg-copy: 18px;
+$xl-copy: 20px;
+
+$xs-hd: 20px;
+$sm-hd: calc(8px + 1vw);
+$md-hd: calc(10px + 1vw);
+$lg-hd: calc(12px + 1vw);
+$xl-hd: 60px;
+$xxl-hd: 96px;

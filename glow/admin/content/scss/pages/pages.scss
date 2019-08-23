@@ -1,0 +1,105 @@
+.products {
+  text-align: center;
+  h1 {
+    margin: 0 0 20px 0;
+  }
+  .product {
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: rgba($background-highlight, 0.8);
+    .img {
+      width: 40%;
+      padding: 5px;
+      img {
+        width: 150px;
+        max-width: 100%;
+      }
+    }
+    .content {
+      width: 60%;
+      padding: 5px;
+      p {
+        display: block;
+      }
+      .edit {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+.edit {
+  form {
+    background: rgba($background-highlight, 0.8);
+    padding: 20px;
+    .edits {
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      .img {
+        width: 40%;
+        padding: 5px;
+        img {
+          width: 150px;
+          max-width: 100%;
+        }
+      }
+      .content {
+        width: 60%;
+        padding: 5px;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+    }
+  }
+}
+.review {
+  h1 {
+    margin: 20px 0;
+  }
+  .reviews {
+    margin: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: top;
+    background: rgba($background-highlight, 0.8);
+  }
+  .reviews.center {
+    align-items: center;
+    .col.center {
+      text-align: center;
+    }
+  }
+  .col {
+    width: 30%;
+    margin: 20px 0;
+    a {
+      margin: 0 45px 0 5px;
+    }
+    i {
+      font-size: $lg-hd;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.invoices {
+  .invoiceProducts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+  .invoice {
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+    background: rgba($background-highlight, 0.8);
+  }
+}

@@ -1,0 +1,166 @@
+.products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: bottom;
+  .product {
+    margin: 20px;
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    @media (max-width: 960px) {
+      margin: 10px;
+      width: 45%;
+    }
+    @media (max-width: 550px) {
+      margin: 10px 0;
+      width: 100%;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      max-width: 300px;
+      height: 300px;
+      object-fit: cover;
+      transition: all 0.5s;
+      @media (max-width: 1260px) {
+        max-width: 100%;
+      } 
+    }
+    a.hide {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+      transition: all 0.5s;
+    }
+    h2 {
+      a{
+        font-size: $md-hd;
+      }
+    }
+    &:hover {
+      border: 2px solid;
+      img {
+        filter: brightness(110%);
+      }
+      a.hide {
+        display: block;
+        padding: 10px;
+        border: 0.5px solid;
+        background: rgba(floralwhite, 0.7);
+      }
+    }
+  }
+}
+
+.quick.open {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: darken(rgba(floralwhite, 0.6), 5%);
+  .modalWrapper {
+    background: floralwhite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 50px;
+    border: 1px solid;
+    .closeQuick {
+     font-weight: 700;
+     display: block;
+     text-align: right;
+     margin: 10px;
+    }
+    .info {
+      .btn {
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.productView {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: top;
+  margin: 0 auto;
+  max-width: 900px;
+  @media (max-width: 550px) {
+    flex-flow: row wrap;
+  }
+  .images {
+    position: relative;
+  }
+  .images, .info {
+    margin: 2%;
+    img {
+      width: 300px;
+      max-width: 300px;
+      height: 300px;
+      object-fit: cover;
+      @media (max-width: 1260px) {
+        max-width: 100%;
+      } 
+      @media (max-width: 550px) {
+        text-align: center;
+      }
+    }
+  }
+  .info {
+    width: 50%;
+    @media (max-width: 550px) {
+      margin: 10px;
+      width: 100%;
+    }
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+.qty {
+  display: inline-block;
+  padding: 5px;
+  border: 0.1px solid;
+  p {
+    font-weight: 900;
+  }
+  a, p {
+    display: inline;
+    margin: 5px;
+    font-size: $sm-hd;
+  }
+}
+
+.heading {
+  max-width:  900px;
+  margin: 0 auto;
+  @media (max-width: 1260px) {
+    max-width: 700px;
+  }
+  @media (max-width: 960px) {
+    max-width: 550px;
+  }
+}
+.sold {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-transform: uppercase;
+  font-size: $sm-hd;
+  transform: rotate(-15deg);
+  font-weight: 900;
+  color: darken($brand-primary, 20%);
+}

@@ -1,0 +1,127 @@
+.more {
+  .overlay {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (max-width: 550px) {
+      flex-flow: row wrap;
+    }
+  }
+}
+
+.text {
+  p {
+    margin: 20px;
+  }
+}
+
+.section {
+  img {
+    max-width: 100%;
+  }
+}
+
+.reviews {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  .review {
+    width: 50%;
+    padding: 20px 50px;
+    .lg_txt {
+      font-size: $sm-hd;
+      margin: 0 auto;
+      quotes: "\201C""\201D""\2018""\2019";
+      padding: 10px 20px;
+      line-height: 1.4;
+    }
+    .lg_txt:before {
+      content: open-quote;
+      display: inline;
+      height: 0;
+      line-height: 0;
+      left: -10px;
+      position: relative;
+      top: 30px;
+      color: #ccc;
+      font-size: 3em;
+    }
+    .lg_txt:after {
+      content: close-quote;
+      display: inline;
+      height: 0;
+      line-height: 0;
+      left: 10px;
+      position: relative;
+      top: 35px;
+      color: #ccc;
+      font-size: 3em;
+    }
+    .indent {
+      margin-left: 50px;
+    }
+    .name {
+      margin:0;
+      text-align: right;
+    }
+    .date {
+      margin:0;
+      text-align: right;
+      font-style: italic;
+    }
+  }
+}
+.reviewForm {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  .radio {
+    label, input {
+      display: inline;
+    }
+    input[type=radio] {
+      width: 30px;
+    }
+  }
+  button {
+    margin: 20px 0;
+    border: 1px solid;
+    background: black;
+    padding: 10px;
+    color: floralwhite;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all 1s;
+    &:hover {
+      color: black;
+      background: floralwhite;
+    }
+  }
+}
+
+.pay {
+  margin: 20px auto;
+  .payCart {
+    margin: 0 50px 50px 50px;
+    padding: 0 20px;
+    border-left: 0.5px solid;
+    @media (max-width: 496px) {
+      margin: 0 20px;
+      padding: 0 5px;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin: 20px 0;
+        padding: 10px;
+        border-left: 1px solid lighten($brand-primary, 10%);
+        border-bottom: 1px solid lighten($brand-primary, 10%);
+      }
+    }
+  }
+}
