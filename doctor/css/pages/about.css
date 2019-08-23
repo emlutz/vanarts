@@ -1,0 +1,98 @@
+.about {
+  margin: 0 auto; }
+  .about h3 {
+    margin-left: 20px; }
+  .about h5 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: -30px; }
+  .about img {
+    max-width: 75px;
+    margin-bottom: -10px;
+    margin-right: -10px; }
+  .about h2 {
+    text-align: center;
+    margin: 20px; }
+  .about .accreditation {
+    margin: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw; }
+    .about .accreditation img {
+      max-width: 70%;
+      max-height: 80px;
+      width: auto;
+      height: auto;
+      margin: 10px; }
+      @media (max-width: 1024px) {
+        .about .accreditation img {
+          max-height: 50px; } }
+    @media (max-width: 722px) {
+      .about .accreditation {
+        flex-flow: row wrap; } }
+  .about .sheila {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: top;
+    margin: 20px 0; }
+    @media (max-width: 550px) {
+      .about .sheila {
+        flex-flow: row wrap;
+        flex-direction: column-reverse; } }
+    .about .sheila .bio {
+      width: 55%;
+      margin: 20px -50px 20px 20px; }
+      @media (max-width: 922px) {
+        .about .sheila .bio {
+          width: 60%;
+          margin: 10px; } }
+      @media (max-width: 700px) {
+        .about .sheila .bio {
+          width: 100%;
+          padding: 10px; } }
+      .about .sheila .bio h3 {
+        font-size: 16px;
+        margin-left: 0; }
+      .about .sheila .bio p {
+        font-size: 14px; }
+      .about .sheila .bio img {
+        max-width: 150px; }
+    @media (max-width: 922px) {
+      .about .sheila .profile {
+        width: 35%; } }
+    @media (max-width: 700px) {
+      .about .sheila .profile {
+        width: 100%;
+        padding: 10px; } }
+    .about .sheila .profile .profile_img {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start; }
+      .about .sheila .profile .profile_img img {
+        max-width: 100%;
+        width: 80%; }
+        .about .sheila .profile .profile_img img:first-child {
+          max-width: 200px;
+          padding: 120px 0 0 0;
+          position: relative;
+          transform: translate(200px); }
+          @media (max-width: 1200px) {
+            .about .sheila .profile .profile_img img:first-child {
+              transform: translate(100px); } }
+          @media (max-width: 922px) {
+            .about .sheila .profile .profile_img img:first-child {
+              padding: 10px 0 0 0;
+              transform: translate(0px);
+              max-width: 150px; } }
+        .about .sheila .profile .profile_img img:last-child {
+          padding: 0 10%; }
+          @media (max-width: 1200px) {
+            .about .sheila .profile .profile_img img:last-child {
+              transform: translate(-75px); } }
+
+/*# sourceMappingURL=about.css.map */

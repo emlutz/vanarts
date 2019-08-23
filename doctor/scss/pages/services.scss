@@ -1,0 +1,37 @@
+.services {
+  h2 {
+    img {
+      margin-bottom: -40px;
+      margin-right: -10px;
+    }
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .options {
+    @media (max-width: 700px) {
+      flex-flow: row wrap;
+    }
+    .service {
+      width: 18%;
+      padding: 10px;
+      margin: 20px 5px;
+      background: $background;
+      border-radius: 5px;
+      @media (max-width: 700px) {
+        width: 48%;
+      }
+      @media (max-width: 550px) {
+        width: 100%;
+      } 
+      h3 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

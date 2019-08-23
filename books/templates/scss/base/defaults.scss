@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  line-height: 25px;
+}
+
+html {
+  font-size: 62.5%;
+  background: $background;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $copy-font;
+  font-size: $md-copy;
+}
+
+main.homeMain, main.gridMain, main.actionMain {
+  margin-top: 150px;
+}
+
+#hero {
+  background-position: bottom;
+  text-align: center;
+  h1, h2 {
+    color: $background;
+  }
+  h1 {
+    font-size: $md-hd;
+    padding: 50px 0 30px 0;
+  }
+  h2 {
+    font-size: $sm-hd;
+    padding: 0 0 30px 0;
+  }
+  @include breakpoint(md) {
+    background-repeat: no-repeat;
+    h1, h2 {
+      margin: 10px 0 10px 0;
+      padding: 10px 0 10px 0;
+      font-size: $sm-hd;
+    }
+  }
+}
+
+#hero.shortHero {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: $hd-font
+}
+
+h1 {font-size: $lg-hd;}
+h2 {font-size: $md-hd;}
+h3, h4, h5, h6 {font-size: $sm-hd;}
+
+a {
+  text-decoration: none;
+  color: $copy-color;
+  transition: all 0.5s;
+  &:hover {
+    color: lighten($brand-secondary, 30%);
+  }
+}

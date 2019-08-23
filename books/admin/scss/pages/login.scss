@@ -1,0 +1,56 @@
+.login {
+  background: rgba($copy-highlight, 0.5);
+  height: 50vh;
+  position: relative;
+  top: 20%;
+  left: 0;
+  transition: all 4s ease;
+  p.invalid {
+    color: #fa3a00;
+  }
+  .inputArea {
+    padding: 20% 0 0 20%;
+    color: $background-highlight;
+    input {
+      width: 200px;
+      height: 40px;
+      display: block;
+      margin: 10px 0 10px 0;
+      background: $brand-secondary;
+      border: 2px solid $brand-primary;
+    }
+    input[type="submit"] {
+      background: $copy-color;
+      color: $background-highlight;
+      &:hover {
+        background: darken($copy-color, 30%);
+      }
+    }
+    input.valid {
+      border: 2px solid rgb(0, 150, 37);
+    }
+    
+    input.invalid {
+      border: 2px solid #fa3a00;
+    }
+  }
+  .loginBee {
+    position: absolute;
+    top: 20%;
+    right: -300px;
+    transform: translate(-600px);
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+}
+
+.lognav {
+  text-align: right;
+  background: rgba($hd-color, 0.2);
+  a.logout {
+    margin: 0 50px 0 0;
+    font-family: $hd-font;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,129 @@
+main.guide {
+  background: $background-highlight;
+  .openingcopy {
+    background-image: url("../imgs/barcelona_sunset.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    padding: 7% 8%;
+    text-align: center;
+    .content {
+      background: rgba($background, 0.8);
+      padding: 20px 300px;
+      clip-path:  polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+      @media (max-width: 850px) {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      @media (max-width: 700px) {
+        padding: 20px 100px;
+      }
+      p {
+        text-align: left;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  section.map {
+    margin: 50px 0;
+    height: 85vh;
+    #barcelona {
+      display: block;
+      position: absolute;
+      top: 2;
+      left: 0;
+      width: 100%;
+      height: 75%;
+      @media (max-width: 1020px) {
+        margin: 0 20px 0 20px;
+        width: 90%
+      }
+      #princesa_location {
+        box-shadow: 10px 10px 5px #aaaaaa;
+        &:hover {
+          width: 130px;
+          height: 126px;
+        }
+      }
+      .st0{fill:#D9D6C5;}
+      .st1{fill:#D2AC97;stroke:#F4EAE4;stroke-width:1.1153;stroke-miterlimit:10;}
+      .st2{fill:none;stroke:#000000;stroke-width:41.825;stroke-miterlimit:10;}
+      .st3{fill:none;stroke:#000000;stroke-width:15.8646;stroke-miterlimit:10;}
+      .st4{fill:none;stroke:#000000;stroke-width:36.1705;stroke-miterlimit:10;}
+      .st5{fill:#FFFFFF;}
+      .st6{fill:none;stroke:#000000;stroke-width:35;stroke-miterlimit:10;}
+      .st7{fill:none;stroke:#000000;stroke-width:16;stroke-miterlimit:10;}
+      .st8{fill:#541424;stroke:#FCF6B1;stroke-width:3;stroke-miterlimit:10;}
+      .st9{fill:#EBE17C;}
+      .st10{fill:none;stroke:#EBE17C;stroke-width:3;stroke-miterlimit:10;}
+      .st11{fill:none;stroke:#000222;stroke-width:25;stroke-miterlimit:10;}
+      .st12{fill:none;stroke:#000222;stroke-width:8;stroke-miterlimit:10;}
+      .st13{fill:#541424;}
+      .st14{fill:#B28A8A;}
+      .st15{fill:#000222;}
+      .st16{fill:#D2AC97;}
+      .st17{fill:#847F7C;
+        &:hover {
+          fill: darken(#847F7C, 20%);
+        }}
+      .st18{fill:#D2AC7C;}
+      .st19{fill:#D9D67C;}
+      .st20{fill:none;stroke:#EBE17C;stroke-miterlimit:10;}
+      .st21{fill:#6F3541;}
+      .st22{fill:#EDDF7C;}
+      .st23{fill:#FCF6B1;}
+      .st24{fill:none;stroke:#EDDF7C;stroke-width:4.1184;stroke-linecap:round;stroke-miterlimit:10;}
+      .st25{font-family: $font;}
+      .st26{font-size:30px;}
+    }
+    #guide_describe {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      background-color: rgba($brand-secondary, 0.8);
+      border: 2px solid #000222;
+      padding: 10px 5px;
+      max-width: 300px;
+      text-align: center;
+      @media (max-width: 550px) {
+        width: 275px;
+      }
+      h4, p {
+        text-align: left;
+        padding: 0 10px 0 10px;
+      }
+      img {
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        @media (max-width: 550px) {
+          height: 150px;
+        }
+      }
+    }
+  }
+  .cta {
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+    overflow: auto;
+    a {
+      padding: 10px 20px;
+      font-style: italic;
+      font-weight: 700;
+      color: $brand-anchor;
+      border: 1px solid $brand-anchor;
+      &:hover {
+        border: 2px solid $brand-anchor;
+        text-decoration: none;
+      }
+      i:first-child {
+        padding: 0 2px 0 10px;
+      }
+    }
+  }
+}

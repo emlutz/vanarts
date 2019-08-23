@@ -1,0 +1,96 @@
+header {
+  width: 100vw;
+  background: #100c08;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .navLogo {
+      width: 30%;
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+      img {
+        max-width: 60%;
+        margin: 10px 50px;
+        @media (max-width: 550px) {
+          max-width: 80%;
+        }
+      }
+    }
+    .navLinks {
+      padding: 5px 50px;
+      width: 70%;
+      ul{
+        float: right;
+        li {
+          float: left;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+        li.divide {
+          border-left: 1px solid $brand-secondary;
+          width: 5px;
+          height: 25px;
+        }
+        li.link {
+          padding: 5px 10px;
+          a.active {
+            text-decoration: underline;
+          }
+        }
+      }
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    .mobNavWrap {
+      padding: 0 20px 0 30px;
+      width: 30%;
+      span {
+        color: $background-highlight;
+      }
+      .mobNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        background-color: $background;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 260px;
+      }
+      .mobNav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: $brand-anchor;
+        font-weight: 700;
+        display: block;
+        transition: 0.8s;
+      }
+      .mobNav a:hover {
+        color: #FFFACD;
+  
+      }
+      .mobNav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      @media (min-width: 991px) {
+        display: none;
+      }
+    }
+  }
+}

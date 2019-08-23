@@ -1,0 +1,171 @@
+.aboutOpen {
+  background-image: url("../imgs/hotel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  padding: 7% 8%;
+  text-align: center;
+  .content {
+    background: rgba($background, 0.8);
+    padding: 20px 300px;
+    clip-path:  polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+    @media (max-width: 850px) {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    @media (max-width: 700px) {
+      padding: 20px 100px;
+    }
+  }
+}
+.testSlider {
+  background: rgba($background, 0.6);
+  margin: 50px 0 10px 0;
+  padding: 30px;
+  @media (max-width: 1068px) {
+    margin: 30px 5% 30px 5%;
+    padding: 10px;
+  }
+  h3 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+.slideControl {
+  text-align: center;
+  a {
+    color: $brand-anchor;
+    padding: 0 30px;
+  }
+}
+#slider {
+  width: 600px;
+  height: 120px;
+  margin: 0 auto;
+  @media (max-width: 1068px) {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.mask {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+.slides {
+  position: relative;
+  transition: all 2s;
+  left: 0px;
+}
+
+.slides p {
+  float: left;
+  display: block;
+  width: 600px;
+  height: 120px;
+  overflow: hidden;
+  // font-weight: 700;
+  @media (max-width: 1068px) {
+    width: 300px;
+    height: 200px;
+  }
+}
+.services {
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+  overflow: auto;
+  a {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: $background;
+    color: $brand-anchor;
+    border: 2px solid $background-highlight;
+    border-radius: 2px;
+    transition: all 0.75s;
+    &:hover {
+      border: 2px solid $brand-anchor;
+      text-decoration: none;
+      font-style: italic;
+      background: darken($background-highlight, 10%);
+    }
+    i:first-child {
+      padding: 0 2px 0 10px;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  .serviceStyle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .service {
+      // background: rgba($background, 0.6);
+      margin: 2% 10%;
+      padding: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      text-align: left;
+      @media (max-width: 720px) {
+        flex-flow: wrap;
+      }
+      @media (max-width: 450px) {
+        margin: 2% 5%;
+        padding: 10px;
+      }
+      h3 {
+        padding: 0 0 20px 0;
+      }
+      img {
+        width: 50%;
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+        @media (max-width: 960px) {
+          height: 400px;
+        }
+        @media (max-width: 720px) {
+          width: 100%;
+        }
+      }
+      .titleInfo {
+        padding: 20px;
+        line-height: 25px;
+        p.spacer {
+          margin: 10px 0 50px 0;
+          font-weight: 700;
+          font-style: italic;
+          @media (max-width: 960px) {
+            margin-bottom: 10px;
+          }
+        }
+        a {
+          padding: 10px 20px;
+          text-transform: uppercase;
+          font-weight: 700;
+          background: $background;
+          color: $brand-anchor;
+          border: 2px solid $background-highlight;
+          border-radius: 2px;
+          transition: all 0.75s;
+          &:hover {
+            border: 2px solid $brand-anchor;
+            text-decoration: none;
+            font-style: italic;
+            background: darken($background-highlight, 10%);
+          }
+          i {
+            margin: 0 0 0 8px;
+          }
+        }
+      }
+    }
+  }
+}

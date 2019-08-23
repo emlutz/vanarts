@@ -1,0 +1,23 @@
+.more {
+  .overlay {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (max-width: 550px) {
+      flex-flow: row wrap;
+    }
+  }
+}
+
+.text {
+  p {
+    margin: 20px;
+  }
+}
+
+.section {
+  img {
+    max-width: 100%;
+  }
+}

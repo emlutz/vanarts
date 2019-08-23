@@ -1,0 +1,348 @@
+/* //UNIVERSAL CSS */
+body {
+  margin: 0;
+}
+
+html {
+  max-width: 100%;
+}
+
+.area {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* //NAV CSS// */
+nav {
+  margin: 0 auto;
+}
+
+#big {
+  display: flex;
+  align-items: center;
+}
+
+#headLogo {
+  padding: 20px;
+}
+
+img#headLogo {
+  width: 200px;
+}
+
+ul.navbar-list {
+  list-style: none;
+  position: relative;
+}
+
+li.navbar-item {
+  float: left;
+  padding: 0 2%;
+}
+
+a.navbar-link {
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: #5b4d4a;
+  transition: all 0.5s;
+}
+
+a.navbar-link:hover {
+  color: #dec46d;
+}
+
+span#menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+a.button.hang {
+  margin: 0 10px;
+  width: 150px;
+  transition: all 0.5s;
+}
+
+li#portfolio.navbar-item:hover span#menu {
+  display: block;
+}
+
+@media (max-width: 400px) {
+  li#portfolio.navbar-item:hover span#menu {
+    display: none;
+  }
+}
+
+/* //FORM CSS// */
+form.contactForm {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* //HOME CSS// */
+
+.cta {
+  text-align: center;
+  color: #5b4d4a;
+  background-color: #849f8c;
+  padding: 10px;
+}
+
+.cta p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #dec46d;
+  font-size: 18px;
+}
+
+#signupFull {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(241, 168, 99, 0.5);
+  z-index: 99;
+}
+
+#signup {
+  width: 600px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  position: relative;
+  z-index: 999;
+}
+
+#signup .closeIcon {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+  color: #dec46d;
+}
+
+#openSignup {
+  text-decoration: none;
+  border-bottom: 1px solid #dec46d;
+  color: #5b4d4a;
+  font-size: 16px;
+}
+
+.formPop {
+  margin: 50px 0 0 0;
+}
+
+ul.vertList {
+  list-style: none;
+  position: relative;
+}
+
+span.line {
+  display: block;
+  border-bottom: 2px solid #dec46d;
+  overflow: hidden;
+}
+
+span.link {
+  width: 500px;
+  margin: 0 0 0 -200px;
+  transition: all 1s;
+}
+
+.vertList li:hover span.link {
+  transform: translate(200px, 0px);
+}
+
+.vertList li {
+  margin: 60px 0 0 0;
+}
+
+.vertList a {
+  text-decoration: none;
+  color: #5b4d4a;
+  font-size: 18px;
+  padding: 0 0 0 400px;
+}
+
+.card {
+  display: none;
+}
+
+.active {
+  display: inline-block;
+}
+
+.card p {
+  margin: 40px 0 0 0;
+}
+
+.mob-show {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .services {
+    display: none;
+  }
+
+  .card {
+    display: block;
+  }
+
+  .mob-show {
+    display: block;
+  }
+}
+
+/* //SLIDER CSS// */
+.fullSlider {
+  margin: 50px 0 0 0;
+}
+
+#slider {
+  width: 564px;
+  height: 375px;
+  margin: 0 auto;
+}
+
+.mask {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+.slides {
+  position: relative;
+  transition: all 2s;
+  left: 0px;
+}
+
+.slides img {
+  float: left;
+  display: block;
+  width: 564px;
+  height: 375px;
+  overflow: hidden;
+}
+
+.slideControl {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.slideControl a {
+  color: #5b4d4a;
+}
+
+.dot {
+  font-size: 12px;
+  margin: 0 0 -25px 0;
+}
+
+#prev {
+  margin: 20px 50px 0 0;
+}
+
+#next {
+  margin: 20px 0 0 50px;
+}
+
+/* //ABOUT CSS// */
+.profile-image img {
+  max-width: 100%;
+}
+.profile-text h1 {
+  margin: 0;
+}
+
+span.line.abTitle {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+
+/* //PORTFOLIO CSS// */
+span.wdTitle {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.portfolio-text h1 {
+  margin: 0;
+}
+
+/* //GALLERY CSS// */
+.gallery-wrap {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap:   5px;
+  -moz-column-count:    4;
+  -moz-column-gap:      5px;
+  column-count:         4;
+  column-gap:           5px;
+  margin: 0 10px;
+  max-width: 100%;
+}
+
+.photo img {
+  padding: 5px 0px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .gallery-wrap {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery-wrap {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+/* //INFO CSS// */
+.portfolio-image img {
+  max-width: 100%;
+}
+
+.portRow {
+  margin: 0 0 50px 0;
+}
+
+/* //CONTACT CSS// */
+.hello img {
+  max-width: 100%;
+}
+
+/* //FOOTER CSS// */
+footer {
+  text-align: center;
+  margin: 50px 0 0 0;
+  height: 200px;
+}
+
+.socials a {
+  font-size: 30px;
+  color: #5b4d4a;
+  margin: 0 30px;
+}
+
+.socials a:hover {
+  color: #dec46d;
+}

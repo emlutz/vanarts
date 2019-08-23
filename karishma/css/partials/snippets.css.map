@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,cAAS;EACP,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,UAAU;EACrB,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,yBAA0B;IAL5B,cAAS;MAML,SAAS,EAAE,QAAQ;;AAMvB,OAAE;EACA,MAAM,EAAE,IAAI;;AAKd,YAAI;EACF,SAAS,EAAE,IAAI",
+"sources": ["../../scss/partials/snippets.scss"],
+"names": [],
+"file": "snippets.css"
+}

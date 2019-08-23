@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guardian Coat</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="16x16" href="imgs/s16x16.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+		function sendForm() {
+			alert("Thanks for the message!");
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<span class="showIcon"></span>
+		<nav>
+			<a href="contact.html">Contact</a><a href="tents.html">Tents</a><a href="backpacks.html">Backpacks</a><a href="jackets.html">Jackets</a><a href="index.html">Home</a>
+		</nav>
+	</header>
+	
+	<main>
+		<div class="info row">
+			<div class="col-6">
+				<img class="coat" src="imgs/mencoatheavy.jpg" alt="Guardian Coat">
+			</div>	
+			
+			<div class="col-6 describe">
+				 <h1>Guardian Coat</h1>
+				 <h2>690.00</h2>
+				 <a class="buy" href="#">Buy</a><br>
+				 <img src="imgs/swatches.png" alt="colour options">
+				 <p><i class="fas fa-tint"></i> 100% Waterproof</p>
+				 <p><i class="far fa-snowflake"></i> Insulated</p>
+				 <p><i class="fas fa-feather-alt"></i> Lightweight</p>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus erat eget libero pretium dignissim. Nullam placerat accumsan lobortis. Sed vestibulum ultrices ante, at porttitor est fermentum eget.</p>
+			</div>
+		</div>	
+		
+		<div class="showcase">
+			<img src="imgs/dogmountain.jpg" alt="man and dog on mountain"><img src="imgs/fallvalleyhike.jpg" alt="hiking in fall"><img src="imgs/manjacketjump.jpg" alt="man jumping waterfall">
+		</div>	
+	
+	</main>
+	<footer>
+		<div class="links">
+			<a href="home.html">Home</a>
+			<a href="jackets.html">Jackets</a>
+			<a href="backpacks.html">Backpacks</a>
+			<a href="tents.html">Tents</a>
+			<a href="contact.html">Contact</a>
+			<p><i class="far fa-copyright"></i> 2018 Traverse</p>
+		</div>	
+		
+		<form>
+			<h1>Get In Touch</h1>
+			<p>Have questions or feedback for us? Please let us know what we can help you with:</p>
+
+			<div class="input">
+				<label>Name</label>
+				<input type="text" name="name">
+			</div>	
+
+			<div class="input">
+				<label>Email</label>
+				<input type="text" name="email">
+			</div>	
+
+			<div class="comment">
+				<label>Comment</label>
+				<input type="textarea" name="comment">
+			</div>
+
+			<div class="send">
+				<button onClick="sendForm()">Send Message</button>
+			</div>	
+		</form>
+		
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-pinterest-p"></i></a>
+		</div>	
+	
+	</footer>
+
+</body>
+</html>

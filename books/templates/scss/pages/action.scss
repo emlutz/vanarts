@@ -1,0 +1,65 @@
+.actionMain {
+  margin: 0 auto;
+  #hero {
+    background-position: center;
+    h1 {
+      background: rgba($color: $hd-color, $alpha: 0.2);
+      display: inline-block;
+    }
+  }
+  section.donate {
+    width: 80%;
+    margin: 0 auto;
+    .optionCopy {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin: 50px 0;
+      div.option {
+        width: 30%;
+        padding: 20px;
+        margin: 5px;
+        background: $background-highlight;
+        a {
+          display: block;
+          margin: 0 50px 10px 50px;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px 20px;
+          border: 2px solid $brand-secondary;
+          color: $brand-secondary;
+          transition: all 1s;
+          @include breakpoint(md) {
+            margin: 0 0 0 0;
+            h3 {
+              font-size: $xs-hd;
+            }
+          }
+          @include breakpoint(sm) {
+            margin: 0 0 0 0;
+          }
+          &:hover {
+            // border: 2px solid $brand-primary;
+            margin: 0 0 10px 0;
+            color: lighten($brand-secondary, 30%);
+          }
+        }
+      }
+      @include breakpoint(sm) {
+      flex-flow: wrap;
+        div.option {
+          width: 100%;
+        }
+      }
+    }
+    .optionImage {
+      text-align: center;
+      img {
+        max-width: 75%;
+      }
+    }
+    @include breakpoint(md) {
+      width: 90%;
+    }
+  }
+}

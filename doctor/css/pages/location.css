@@ -1,0 +1,30 @@
+.clinic .options {
+  margin: 50px; }
+  @media (max-width: 922px) {
+    .clinic .options {
+      flex-flow: row wrap;
+      flex-direction: column-reverse; } }
+  .clinic .options .clinic_details {
+    width: 40%;
+    list-style: inside; }
+    @media (max-width: 922px) {
+      .clinic .options .clinic_details {
+        width: 100%; } }
+    .clinic .options .clinic_details .quote_wrap {
+      padding: 0 100px 0 0; }
+      @media (max-width: 922px) {
+        .clinic .options .clinic_details .quote_wrap {
+          padding: 0; } }
+    .clinic .options .clinic_details .quote {
+      width: 100%; }
+    .clinic .options .clinic_details .address {
+      margin: 20px 20px 0 0; }
+  .clinic .options .map {
+    width: 60%; }
+    @media (max-width: 922px) {
+      .clinic .options .map {
+        width: 100%; } }
+    .clinic .options .map img {
+      max-width: 100%; }
+
+/*# sourceMappingURL=location.css.map */

@@ -1,0 +1,56 @@
+.quote_wrap {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  @media (max-width: 922px) {
+    padding: 0 0;
+  }
+  .quote {
+    position: relative;
+    padding: 10px 0;
+    width: 70%;
+    max-width: 100%;
+    z-index: 1;
+    margin: 20px auto;
+    align-self: center;
+    border-top: 1px solid lighten($brand-primary, 40%);
+    border-bottom: 1px solid lighten($brand-primary, 40%);
+    @media (max-width: 922px) {
+      margin: 10px;
+      width: 100%;
+    }
+    h4 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: italic;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
+    }
+    p {
+      position: relative;
+      margin: 0;
+      padding-top: 10px;
+      font-size: 14px;
+      z-index: 1;
+      font-weight: 500;
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
+    }
+    &:after {
+      position: absolute;
+      content: '"';
+      color: lighten($brand-primary, 40%);
+      font-family: 'Catamaran', sans-serif;
+      font-size: 150px;
+      line-height: 0;
+      bottom: -45px;
+      right: 30px;
+    }
+  }
+}

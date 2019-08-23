@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: url("../imgs/back.jpg");
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $copy-font;
+  font-size: $md-copy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: $hd-font;
+}
+
+h1 {font-size: $lg-hd;}
+h2 {font-size: $md-hd;}
+h3, h4, h5, h6 {font-size: $sm-hd;}
+
+a {
+  text-decoration: none;
+  color: $hd-color;
+  &:hover {
+    color: darken($copy-color, 30%);
+  }
+}
+
+ul {
+  list-style: none;
+}
+label {
+  display: block;
+  margin: 15px 0 0 0;
+}
+img.preview {
+  width: 100px;
+}
+input, select {
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: $brand-secondary;
+  border: 2px solid $brand-primary;
+}
+input.shortText {
+  width: 60%;
+}
+textarea {
+  width: 90%;
+  height: 150px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: $brand-secondary;
+  border: 2px solid $brand-primary;
+}
+input[type="submit"] {
+  background: $copy-color;
+  color: $background-highlight;
+  &:hover {
+    background: darken($copy-color, 30%);
+  }
+}
+
+input[type="textarea"] {
+  width: 400px;
+  height: 100px;
+}
+div.btn {
+  margin: 20px 0;
+  a {
+    border: 1px solid black;
+    padding: 10px;
+  }
+}
+
+p.success {
+  background: rgba($color: #8ef37a, $alpha: 0.8);
+  text-align: center;
+  padding: 20px;
+}

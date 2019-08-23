@@ -1,0 +1,18 @@
+body {
+  padding: 200px 0 0 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background: #fbfae8;
+}
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 100px 0 0 0;
+  }
+}
+.typewritter img {
+  max-width: 90vw;
+}
+#word {
+  font-size: 40px;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,167 @@
+footer {
+  z-index: 9999;
+  .pcFoot {
+    margin-top: 20px;
+    width: 100vw;
+    background: #100c08;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 991px) {
+      display: none;
+    }
+    form {
+      margin: 0 0 0 30px;
+      font-family: $font;
+      width: 50%;
+      .formTitle {
+        h3 {
+          margin: 10px 10px 0 0;
+          color: $brand-secondary;
+          display: inline;
+        }
+        a {
+          font-size: 12px;
+          text-decoration: underline;
+          i {
+            margin: 0 0 0 5px;
+          }
+        }
+      }
+      input {
+        height: 25px;
+        margin: 0 0 0 0;
+      }input[type="date"]::-webkit-clear-button {
+        display: none;
+      }
+   
+      /* Removes the spin button */
+      input[type="date"]::-webkit-inner-spin-button {
+          display: none;
+      }
+   
+      /* Always display the drop down caret */
+      input[type="date"]::-webkit-calendar-picker-indicator {
+          color: $background;
+      }
+   
+      /* A few custom styles for date inputs */
+      input[type="date"], input[type="number"] {
+          appearance: none;
+          -webkit-appearance: none;
+          color: #95a5a6;
+          font-family: "Helvetica", arial, sans-serif;
+          font-size: 18px;
+          border:1px solid #ecf0f1;
+          background:#ecf0f1;
+          border-radius: 3px;
+          padding:5px;
+          display: inline-block !important;
+          visibility: visible !important;
+          // @include breakpoint(sm) {
+          //   display: none;
+          // }
+      }
+   
+      input[type="date"], focus {
+          color: #95a5a6;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+      }
+      input[type=submit] {
+        background: #055f23;
+        color: $brand-secondary;
+        font-weight: $hd-font;
+        text-transform: uppercase;
+        margin: 0 0 15px 30px;
+        padding: 5px 30px;
+        height: 40px;
+        border: 2px solid #3cc480;
+        border-radius: 10px;
+        transition: all 1s;
+        &:hover {
+          // border-top: 2px solid #3cc480;
+          // border-bottom: 2px solid #3cc480;
+          border: 2px solid lighten(#055f23, 5%);
+          background: lighten(#055f23, 5%);
+          color: darken($brand-secondary, 10%);
+          clip-path:  polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+          padding: 5px 40px;
+          // font-size: 16px;
+        }
+      }
+    }
+    .contact {
+      font-size: 14px;
+      line-height: 25px;
+      width: 30%;
+    }
+    .socials {
+      a {
+        margin: 10px 30px 10px 10px;
+        font-size: 20px;
+        width: 20%;
+      }
+      p {
+        font-size: 10px;
+        color: $brand-secondary;
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+  .mobFoot {
+    width: 100vw;
+    background: #100c08;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 991px) {
+      display: none;
+    }
+    .bookbar {
+      h3 {
+        margin: 10px 10px 0 0;
+        color: $brand-secondary;
+        font-size: 14px;
+      }
+      a {
+        font-size: 12px;
+        text-decoration: underline;
+        i {
+          margin: 0 0 0 5px;
+        }
+      }
+      input[type=submit] {
+        background: #055f23;
+        color: $brand-secondary;
+        font-weight: $hd-font;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin: 5px;
+        padding: 5px 10px;
+        height: 40px;
+        border: 2px solid #3cc480;
+        border-radius: 10px;
+        transition: all 1s;
+        &:hover {
+          // border-top: 2px solid #3cc480;
+          // border-bottom: 2px solid #3cc480;
+          border: 2px solid lighten(#055f23, 5%);
+          background: lighten(#055f23, 5%);
+          color: darken($brand-secondary, 10%);
+          clip-path:  polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+          padding: 5px 40px;
+          // font-size: 16px;
+        }
+      }
+    }
+  }
+}

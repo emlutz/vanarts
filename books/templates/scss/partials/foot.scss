@@ -1,0 +1,38 @@
+footer {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: $hd-color;
+  color: $background;
+  .footCopy {
+    padding: 40px;
+    max-width: 60%;
+    @include breakpoint(sm) {
+      max-width: 95%;
+    }
+  }
+  .contact {
+    line-height: 30px;
+    padding: 40px 0 40px 40px;
+    a {
+      color: $background;
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+    p {
+      a {
+        margin: 10px;
+      }
+    }
+  }
+  .footCopy {
+    font-family: $hd-font;
+    font-size: $sm-hd;
+  }
+  @include breakpoint(sm) {
+    flex-flow: wrap;
+  }
+}

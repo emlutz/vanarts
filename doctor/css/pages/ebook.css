@@ -1,0 +1,35 @@
+@media (max-width: 550px) {
+  .about_book .options {
+    margin-bottom: -200px; } }
+@media (max-width: 550px) {
+  .about_book .options {
+    flex-flow: row wrap; } }
+@media (max-width: 550px) {
+  .about_book .options .sheila_book {
+    width: 48%; } }
+.about_book .options .sheila_book img {
+  max-width: 100%; }
+.about_book .options .sheila_book:first-child {
+  width: 100%; }
+  @media (max-width: 550px) {
+    .about_book .options .sheila_book:first-child {
+      width: 48%; } }
+.about_book .options .sheila_book:nth-child(2) {
+  position: relative;
+  transform: translate(-100px); }
+  @media (max-width: 1350px) {
+    .about_book .options .sheila_book:nth-child(2) {
+      transform: translate(0px); } }
+@media (max-width: 550px) {
+  .about_book .options .sheila_book:last-child {
+    position: relative;
+    left: -120px;
+    top: -200px; } }
+.about_book .options h6 {
+  text-align: center;
+  font-size: 14; }
+  .about_book .options h6 img.sm {
+    max-width: 95px;
+    margin-bottom: -15px; }
+
+/*# sourceMappingURL=ebook.css.map */

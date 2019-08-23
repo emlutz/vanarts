@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  background-image: url("../imgs/back.jpg"); }
+
+body {
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  margin: 40px;
+  padding: 20px;
+  background: rgba(0, 22, 39, 0.85); }
+
+section {
+  background: #fff5e1;
+  transition: all 4s ease;
+  margin: 2% 5%;
+  padding: 20px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: "PT Sans", sans-serif; }
+
+h1 {
+  font-size: 42px; }
+
+h2 {
+  font-size: 34px; }
+
+h3, h4, h5, h6 {
+  font-size: 24px; }
+
+a {
+  text-decoration: none;
+  color: #ffe9bd;
+  font-weight: 700; }
+  a:hover {
+    color: #e81269; }
+
+a.btn {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  border: 2px solid #e81269;
+  color: #00508d;
+  background: #fffaf0;
+  font-size: 18px;
+  transition: all 1s; }
+  a.btn:hover {
+    color: #ffe9bd;
+    background: #e81269; }
+
+ul {
+  list-style: none; }
+
+label {
+  display: block;
+  margin: 15px 0 0 0;
+  font-weight: 700; }
+
+img.preview {
+  width: 100px; }
+
+input, select {
+  width: 50%;
+  height: 40px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: #fefab8;
+  border: 2px solid #e81269; }
+
+input.shortText {
+  width: 300px; }
+
+textarea {
+  width: 100%;
+  height: 30px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: #fefab8;
+  border: 2px solid #e81269; }
+
+.radio label, .radio input {
+  display: inline; }
+.radio input[type=radio] {
+  width: 30px; }
+
+input[type="submit"] {
+  background: #e81269;
+  color: #fff5e1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 120%; }
+  input[type="submit"]:hover {
+    background: #f03d86;
+    border: 2px solid #fff5e1; }
+
+input[type="textarea"] {
+  width: 400px;
+  height: 100px; }
+
+div.btn {
+  margin: 20px 0; }
+  div.btn a {
+    border: 1px solid black;
+    padding: 10px; }
+
+p.success {
+  background: rgba(142, 243, 122, 0.8);
+  text-align: center;
+  padding: 20px; }
+
+.valid {
+  color: green; }
+
+.pending {
+  color: orange; }
+
+.invalid {
+  color: red; }
+
+p.center {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 10px; }
+
+p.right {
+  text-align: right;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: 24px; }
+
+.tr {
+  display: block;
+  padding: 10px;
+  overflow: auto;
+  margin: 5px 0;
+  text-align: center;
+  border-bottom: 0.5px solid #e81269; }
+  @media (max-width: 1110px) {
+    .tr {
+      overflow-x: auto; } }
+  .tr h3 {
+    writing-mode: tb-rl;
+    transform: rotate(200deg);
+    transform-origin: left bottom 5; }
+  .tr img {
+    max-width: 80%; }
+  .tr .td {
+    float: left;
+    word-wrap: break-word;
+    margin: 0 5px; }
+  .tr .delete {
+    text-align: center; }
+
+.count {
+  text-align: center;
+  margin: 20px 0; }
+  .count p {
+    font-weight: 700; }
+  .count a {
+    margin: 5px;
+    font-weight: 700; }
+
+.space {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.login {
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 4s ease;
+  margin: 0 auto; }
+  .login a.center {
+    display: block;
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: floralwhite;
+    font-size: 24px;
+    transition: all 1s; }
+    .login a.center:hover {
+      color: #890b3e; }
+  .login form {
+    margin: 10% 15%; }
+  .login p.invalid {
+    color: #fa3a00; }
+
+.dash {
+  font-size: 34px;
+  font-weight: 700; }
+  .dash div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(255, 245, 225, 0.8);
+    margin: 20px; }
+
+.products {
+  text-align: center; }
+  .products h1 {
+    margin: 0 0 20px 0; }
+  .products .product {
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: rgba(255, 245, 225, 0.8); }
+    .products .product .img {
+      width: 40%;
+      padding: 5px; }
+      .products .product .img img {
+        width: 150px;
+        max-width: 100%; }
+    .products .product .content {
+      width: 60%;
+      padding: 5px; }
+      .products .product .content p {
+        display: block; }
+      .products .product .content .edit {
+        margin: 20px 0; }
+
+.edit form {
+  background: rgba(255, 245, 225, 0.8);
+  padding: 20px; }
+  .edit form .edits {
+    display: flex;
+    justify-content: center;
+    align-items: top; }
+    .edit form .edits .img {
+      width: 40%;
+      padding: 5px; }
+      .edit form .edits .img img {
+        width: 150px;
+        max-width: 100%; }
+    .edit form .edits .content {
+      width: 60%;
+      padding: 5px; }
+  .edit form textarea {
+    width: 100%;
+    height: 50px; }
+  .edit form textarea.long {
+    height: 300px; }
+
+.review h1 {
+  margin: 20px 0; }
+.review .reviews {
+  margin: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: top;
+  background: rgba(255, 245, 225, 0.8); }
+.review .reviews.center {
+  align-items: center;
+  border-bottom: 0.5px solid #001627;
+  border-left: 0.5px solid #001627; }
+  .review .reviews.center .col input {
+    width: 400px; }
+  .review .reviews.center .col a, .review .reviews.center .col button {
+    color: #00508d;
+    transition: all 1s;
+    padding: 10px 20px;
+    background: white;
+    border: 0.5px solid white;
+    display: block; }
+    .review .reviews.center .col a:hover, .review .reviews.center .col button:hover {
+      color: #e81269;
+      border: 0.5px solid #001627; }
+  .review .reviews.center .col img {
+    max-width: 150px; }
+  .review .reviews.center .col.center {
+    text-align: center; }
+    .review .reviews.center .col.center input {
+      width: 400px; }
+.review .col {
+  min-width: 30%;
+  margin: 20px 10px; }
+  .review .col i {
+    font-size: 42px; }
+
+.invoices .invoiceProducts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+.invoices .invoice {
+  width: 30%;
+  margin: 20px;
+  padding: 10px;
+  background: rgba(255, 245, 225, 0.8); }
+
+header {
+  margin: 0; }
+  header img {
+    max-width: 200px;
+    transition: all 1s; }
+    header img:hover {
+      filter: brightness(125%); }
+  header .options {
+    margin: 20px auto;
+    text-align: center; }
+    header .options a {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      display: inline;
+      margin: 20px;
+      padding: 15px;
+      transition: all 1s; }
+
+/*# sourceMappingURL=main.css.map */

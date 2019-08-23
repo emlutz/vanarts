@@ -1,0 +1,159 @@
+.contactOpen {
+  background-image: url("../imgs/princesa_lobby.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  padding: 7% 8%;
+  text-align: center;
+  .content {
+    background: rgba($background, 0.8);
+    padding: 20px 300px;
+    clip-path:  polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+    @media (max-width: 850px) {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    @media (max-width: 700px) {
+      padding: 20px 100px;
+    }
+  }
+}
+.bookForm {
+  margin: 50px 0;
+  h2 {
+    text-align: center;
+  }
+  form {
+    margin: 0 20% 0 20%;
+    background: $background;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      margin: 0 10% 0 10%;
+    }
+    @media (max-width: 700px) {
+      margin: 0 10% 0 10%;
+      flex-flow: wrap;
+      text-align: center;
+    }
+    .clientInfo {
+      width: 48%;
+      @media (max-width: 700px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    label, input {
+      display: block;
+    }
+    input, select, textarea {
+      background: $background-highlight;
+      height: 25px;
+      border: none;
+      border-radius: 3px;
+      width: 300px;
+      margin-bottom: 15px;
+      @media (max-width: 900px) {
+        width: 250px;
+      }
+      @media (max-width: 700px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    textarea {
+      height: 200px;
+    }
+    input[type=submit] {
+      width: 150px;
+      background: $brand-anchor;
+      border: 2px solid $brand-anchor;
+      color: $background-highlight;
+      height: 30px;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover {
+        border: 2px solid $background-highlight;
+      }
+    }
+  }
+}
+#blog {
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0;
+  overflow: auto;
+  h2 {
+    text-align: center;
+  }
+  .articles {
+    margin: 30px 15% 30px 15%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      margin: 10px 10% 30px 10%;
+    }
+    @media (max-width: 550px) {
+      margin: 10px 1% 10px 1%;
+    }
+    .article {
+      width: 45%;
+      background: $background;
+      padding: 20px;
+      margin: 20px;
+      @media (max-width: 1020px) {
+        width: 95%;
+      }
+      img {
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+        @media (max-width: 1020px) {
+          width: 100%;
+        }
+      }
+      p, h3 {
+        margin: 0 0 20px 0;
+        text-align: left;
+      }
+      h3 {
+        @media (max-width: 1020px) {
+          text-align: center;
+        }
+      }
+      a {
+        padding: 10px 20px;
+        font-style: italic;
+        font-weight: 700;
+        color: $brand-anchor;
+        border: 1px solid $brand-anchor;
+        &:hover {
+          border: 2px solid $brand-anchor;
+          text-decoration: none;
+        }
+        i:first-child {
+          padding: 0 2px 0 10px;
+        }
+      }
+    }
+  }
+  a {
+    padding: 10px 20px;
+    font-style: italic;
+    font-weight: 700;
+    color: $brand-anchor;
+    border: 1px solid $brand-anchor;
+    &:hover {
+      border: 2px solid $brand-anchor;
+      text-decoration: none;
+    }
+    i:first-child {
+      padding: 0 2px 0 10px;
+    }
+  }
+}

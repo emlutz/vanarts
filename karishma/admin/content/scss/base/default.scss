@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: url("../imgs/back.jpg");
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $copy-font;
+  font-size: $md-copy;
+  margin: 40px;
+  padding: 20px;
+  background: rgba($cta, 0.85);
+}
+
+section {
+  background: $background-highlight;
+  transition: all 4s ease;
+  margin: 2% 5%;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: $hd-font;
+}
+
+h1 {font-size: $lg-hd;}
+h2 {font-size: $md-hd;}
+h3, h4, h5, h6 {font-size: $sm-hd;}
+
+a {
+  text-decoration: none;
+  color: darken($background, 10%);
+  font-weight: 700;
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+a.btn {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  border: 2px solid $brand-primary;
+  color: lighten($cta, 20%);
+  background: $background;
+  font-size: $lg-copy;
+  transition: all 1s;
+  &:hover {
+    color: darken($background, 10%);
+    background: $brand-primary;
+  }
+}
+
+ul {
+  list-style: none;
+}
+label {
+  display: block;
+  margin: 15px 0 0 0;
+  font-weight: 700;
+}
+img.preview {
+  width: 100px;
+}
+input, select {
+  width: 50%;
+  height: 40px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: lighten($brand-secondary, 20%);
+  border: 2px solid $brand-primary;
+}
+input.shortText {
+  width: 300px;
+}
+textarea {
+  width: 100%;
+  height: 30px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: lighten($brand-secondary, 20%);
+  border: 2px solid $brand-primary;
+}
+.radio {
+  label, input {
+    display: inline;
+  }
+  input[type=radio] {
+    width: 30px;
+  }
+}
+
+input[type="submit"] {
+  background: $brand-primary;
+  color: $background-highlight;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 120%;
+  &:hover {
+    background: lighten($brand-primary, 10%);
+    border: 2px solid $background-highlight;
+  }
+}
+
+input[type="textarea"] {
+  width: 400px;
+  height: 100px;
+}
+div.btn {
+  margin: 20px 0;
+  a {
+    border: 1px solid black;
+    padding: 10px;
+  }
+}
+
+p.success {
+  background: rgba($color: #8ef37a, $alpha: 0.8);
+  text-align: center;
+  padding: 20px;
+}
+
+.valid {
+  color: green;
+}
+
+.pending {
+  color: orange;
+}
+
+.invalid {
+  color: red;
+}
+
+p.center {
+  text-align: center;
+  font-weight: 700;
+  font-size: $sm-hd;
+  margin: 10px;
+}
+
+p.right {
+  text-align: right;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: $sm-hd;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAY;EACV,MAAM,EAAE,MAAM;EACd,0BAAe;IACb,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,MAAM;IACd,sCAAY;MACV,OAAO,EAAE,IAAI;MACb,SAAS,EAAE,UAAU;IAKvB,uCAAa;MACX,UAAU,EAAE,MAAM",
+"sources": ["../../scss/pages/action.scss"],
+"names": [],
+"file": "action.css"
+}

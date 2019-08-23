@@ -1,0 +1,115 @@
+.login {
+  margin: 20px auto;
+  text-align: center;
+  img {
+    display: block;
+    margin: 5px auto;
+  }
+  a.nav {
+    display: inline-block;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid;
+  }
+  .form {
+    width: 60%;
+    margin: 3% 20% 0 20%;
+    text-align: center;
+  }
+}
+.success {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: $brand-secondary;
+  font-size: 20px;
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  // margin: 15px 0 0 0;
+  .nav {
+    width: 50%;
+    a {
+      text-align: right;
+      h4 {
+        margin: 20px 100px 0 0;
+        text-align: right;
+        font-size: 25px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .logo {
+    width: 50%;
+    img {
+      margin: 0 0 0 10%;
+    }
+  }
+}
+.messages {
+  h1 {
+    text-align: center;
+  }
+  form {
+    label, select, input {
+      display: inline;
+      padding: 10px;
+    }
+    label {
+      font-weight: 700;
+    }
+    input[type=submit] {
+      display: inline;
+    }
+  }
+  .tr {
+    display: block;
+    padding: 10px;
+    overflow: auto;
+    margin: 2px 0;
+    @media (max-width: 1110px) {
+      overflow-x: auto;
+    }
+    &:nth-child(even)
+    {
+      background: $background;
+    }
+    .td {
+      float: left;
+      word-wrap: break-word;
+      margin: 0 2px;
+    }
+    .id, .delete {
+      width: 4%;
+    }
+    .news {
+      width: 7%;
+    }
+    .id, .news, .delete {
+      text-align: center;
+    }
+    .name, .date {
+      width: 15%;
+    }
+    .email {
+      width: 20%;
+    }
+    .comment {
+      width: 32%;
+    }
+  }
+}
+.count {
+  text-align: center;
+  p {
+    font-weight: 700;
+  }
+  a {
+    margin: 5px;
+    font-weight: 700;
+  }
+}

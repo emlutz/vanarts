@@ -1,0 +1,46 @@
+.about_book {
+  .options {
+    @media (max-width: 550px) {
+      margin-bottom: -200px;
+    } 
+    @media (max-width: 550px) {
+      flex-flow: row wrap;
+    }
+    .sheila_book {
+      @media (max-width: 550px) {
+        width: 48%;
+      } 
+      img {
+        max-width: 100%;
+      }
+      &:first-child {
+        width: 100%;
+        @media (max-width: 550px) {
+          width: 48%;
+        } 
+      }
+      &:nth-child(2) {
+        position: relative;
+        transform: translate(-100px);
+        @media (max-width: 1350px) {
+          transform: translate(0px);
+        }
+      }
+      &:last-child {
+        @media (max-width: 550px) {
+          position: relative;
+          left: -120px;
+          top: -200px;
+        } 
+      }
+    }
+    h6 {
+      text-align: center;
+      font-size: 14;
+      img.sm {
+        max-width: 95px;
+        margin-bottom: -15px;
+      }
+    }
+  }
+}

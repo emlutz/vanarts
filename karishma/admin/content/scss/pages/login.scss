@@ -1,0 +1,23 @@
+.login {
+  background: rgba($copy-color, 0.5);
+  transition: all 4s ease;
+  margin: 0 auto;
+  a.center {
+    display: block;
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: floralwhite;
+    font-size: $sm-hd;
+    transition: all 1s;
+    &:hover {
+      color: darken($brand-primary, 20%);
+    }
+  }
+  form {
+    margin: 10% 15%;
+  }
+  p.invalid {
+    color: #fa3a00;
+  }
+}

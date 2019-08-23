@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  line-height: 130%;
+}
+
+html {
+  font-size: 62.5%;
+  background-image: url('../imgs/beach.jpg');
+  background-attachment: fixed;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $decorative-font;
+  font-size: $md-copy;
+  color: $copy-color;
+  margin: 0 50px;
+}
+
+section {
+  background: rgba($background-highlight, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: $hd-font
+}
+
+h1 {font-size: $lg-hd;}
+h2 {font-size: $md-hd;}
+h3, h4, h5, h6 {font-size: $sm-copy;}
+
+a {
+  text-decoration: none;
+  color: $copy-color;
+  transition: all 0.5s;
+  &:hover {
+    color: #fb4d46;
+    font-weight: 500;
+  }
+}
+
+input, label, textarea {
+  display: block;
+  border: none;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  font-family: $copy-font;
+}
+
+input[type='submit'] {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  background: #fb4d46;
+  color: $cta;
+  transition: all 0.5s;
+  &:hover {
+    color: #fb4d46;
+    background: $cta;
+    border-radius: 5px;
+  }
+}
+
+.invalid {
+  color: red;
+}

@@ -1,0 +1,715 @@
+* {									/*Universal CSS*/
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+	position: relative;
+	max-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	padding-bottom: 420px;
+	display: inline-block;
+}
+
+main {
+	margin-top: 100px;
+}
+
+.fit{
+	width: 100%;
+	max-width: 100%;
+}
+
+
+header {                              /*header CSS*/
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+}
+
+header span {
+	height: 100px;
+	width: 250px;
+	background-image: url("../imgs/logosprite.png");
+	background-repeat: no-repeat;
+	background-position: 50px 10px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+header span:hover {
+	background-position: -165px 10px;
+}
+
+header a {
+	float: right;
+	text-decoration: none;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	margin: 30px;
+	margin-top: -60px;
+	transition: all .5s;
+}
+
+header a:first-of-type {
+	margin-right: 80px;
+}
+
+header a:hover {
+	border-bottom: 5px solid #fa5f54;
+}
+								
+
+										/*Footer CSS*/
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	color: white;
+}
+
+.links {
+	width: 200px;
+	position: absolute;
+	left: 40px;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin-top: 40px;
+}
+
+footer a:hover {
+	color: #fa5f54;
+}
+
+footer p {
+	text-align: left;
+	margin-top: 40px;
+	margin-left: -50px;
+}
+									/*Form CSS*/
+form {
+	width: 650px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 30px;
+	left: 27%;
+}
+
+form h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+form p {
+	text-align: center;
+}
+
+.input {
+	display: inline;
+}
+
+.input input:first-of-type {
+	margin-right: 50px;
+}
+
+.input input {
+	width: 220px;
+	height: 30px;
+	text-align: left;
+}
+
+.comment {
+	width: 600px;
+	text-align: left;
+}
+
+.comment input {
+	width: 400px;
+	height: 60px;
+	margin: 20px;
+}
+
+.send button {
+	background-color: #fa5f54;
+	border-style: none;
+	border: 2px solid #fa5f54;
+	border-radius: 5px;
+	width: 250px;
+	height: 35px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+.social {
+	position: absolute;
+	top: 0px;
+	right: 40px;
+	margin-top: 40px;
+	font-size: 30px;
+}
+
+.social i {
+	display: block;
+}
+
+.row {
+	overflow: auto;
+}
+
+.row:before, row:after {
+	content: ""; 
+	display: table; 
+}
+
+.row:after {
+		clear: both;
+	} 		
+
+.cf{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.row {                     		 /*Grid CSS*/
+	overflow: auto;
+}
+
+[class*="col-"] {
+	float: left;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 32%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;		
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-12 {
+	width: 100%;
+}
+
+										
+										/*Home CSS*/
+										/*Sale CSS*/
+.cover {
+	height: 600px;
+	overflow: hidden;
+}
+
+.cover img {
+	width: 100%;
+	height: auto;
+}
+
+.sale {
+	height: 100%;
+	background-color: black;
+	color: white;
+	float: right;
+	text-align: center;
+	font-size: 30px;
+}
+
+.sale h1 {
+	
+	text-transform: uppercase;
+}
+
+.sale h2 {
+	padding: 50px;
+	text-transform: uppercase;
+}
+
+.sale h2:first-of-type {
+	margin-top: 40px;
+}
+
+.sale h2:last-of-type {
+	margin-bottom: 30px;
+}
+
+.sale a {
+	background-color: #fa5f54;
+	padding: 20px;
+	border-radius: 5px;
+	transition: all 1s;
+	text-decoration: none;
+	color: white;
+}
+
+.sale a:hover {
+	padding: 35px;
+}
+
+								/*home body*/
+section .about {
+	display: block;
+	position: absolute;
+}
+
+.about h1, p {
+	text-align: center;
+	line-height: 25px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+
+.about h1 {
+	padding-top: 30px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+}
+
+.categories {
+	width: 80vw;
+}
+
+.showPhoto {
+	height: 400px;
+	width: 400px;
+	background-image: url("../imgs/categories.png");
+	background-repeat: no-repeat;
+	margin: 20px;
+	transition: all 2s;
+}
+
+.showPhoto.jack {	
+	background-position: -50px 0px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.showPhoto.back {	
+	background-position: -600px 0px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.showPhoto.tent {	
+	background-position: -1250px -2px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.showPhoto a {
+	display: none;
+}
+
+.showPhoto:hover {
+	border: 8px solid black;
+	opacity: 50%;
+}
+
+.showPhoto:hover a {
+	display: inline;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px #666666;
+	color: white;
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+													/*gallery*/
+.gallery {
+	overflow: auto;
+	margin: 0 auto;
+}
+
+.gallery h1 {
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
+
+.pic {
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+												
+												/*Jackets, Backpacks, Tents CSS*/
+.info {
+	margin-top: 30px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.tech {
+	background-color: black;
+	color: white;
+	height: 100%;
+}
+
+.tech h2, p {
+	text-align: left;
+}
+
+.tech h2 {
+	margin: 40px;
+	margin-top: 100px; 
+}
+
+.title {
+	display: block;
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	clear: both;
+	padding: 20px;
+	margin-left: 80px;
+	margin-bottom: 30px;
+	font-size: 50px;
+}
+
+ul {
+	list-style: none;
+	line-height: 30px;
+	text-align: left;
+	margin-left: 120px;
+}
+
+.product img {
+	max-width: 100%;
+	display: table-cell;
+}
+
+.product a {
+	text-decoration: none;
+	color: white;
+	background-color: #fa5f54;
+	border-radius: 3px;
+	padding: 20px;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+
+.product h2 {
+	text-align: center;
+	padding: 10px;
+}
+
+.product .reduced {
+	display: inline-block;
+	padding: 10px;
+	color: red;
+}
+
+.product .normal {
+	display: inline-block;
+	text-decoration: line-through;
+}
+
+.special {
+	text-align: center;
+}
+
+
+												
+										/*Contact CSS*/
+.retailers {
+	margin-top:40px;
+	margin-bottom: 40px;
+}
+
+.retailers h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+	margin-left: 150px;
+	margin-bottom: 20px;
+}
+
+.retailers img {
+	width: 300px;
+	margin: 10px;
+}
+
+
+										/*Product CSS*/
+.coat {
+	width: 50%;
+	margin-left: 250px;
+}
+
+.describe {
+	text-align: left;
+	margin-top: 40px;
+}
+
+.describe h2, a {
+	display: inline-block;
+}
+
+.describe a {
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #fa5f54;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 20px;
+}
+
+.describe p {
+	width: 60%;
+	margin-left: -50px;
+}
+
+.showcase {
+	height: 600px;
+	margin-top: 50px;
+	width: 80vw;
+}
+
+.showcase img {
+	width: 30%;
+	padding: 20px;
+}
+
+
+											/*Small screen CSS*/
+@media only screen and (max-width: 560px) {
+	[class*="col-"]{
+		float: left;
+		padding: 10px;
+	}
+	
+	.col-1 {
+		width: 100%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 100%;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	.col-5 {
+		width: 100%;
+	}
+	.col-6 {
+		width: 100%;
+	}
+	.col-7 {
+		width: 100%;
+	}
+	.col-8 {
+		width: 100%;
+	}
+	.col-9 {
+		width: 100%;
+	}
+	.col-10 {
+		width: 100%;
+	}
+	.col-11 {
+		width: 100%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+
+	#sitepad {
+		width: 100%;
+		margin: 0 auto;
+		padding: 15px;
+		}
+										/*small universal CSS*/
+	* {
+		max-width: 100%;
+	}
+	
+	html {
+		position: relative;
+	}
+	
+	main {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+	
+	
+									 /*nav small screen*/
+	
+	header {
+		height: 150px;
+	}
+	
+	header span {              
+		display: block;
+	}
+	
+	nav {
+		display: block;
+	}
+	
+	nav a {
+		font-size: 18px;
+		padding: 5px;
+		margin: 0px;
+	}
+	
+	
+								/*footer small CSS*/
+	footer {
+		height: 500px;
+	}
+	
+	.links {
+		display: none;
+	}
+	
+	form {
+		width: 75%;
+		left: 5px;
+		text-align: left;
+		font-size: 12px;
+	}
+	
+	form p {
+		text-align: left;
+		margin: 0px;
+	}
+	
+	.comment input {
+		margin: 0px;
+		width: 250px;
+	}
+	
+	.send button {
+		margin-top: 20px;
+	}			
+	
+
+	
+								/*home small screen*/
+	.cover img {
+		height: 350px;
+		margin-bottom: 0px;
+	}
+	
+	.sale {
+		display: block;
+		margin: 0px;
+		font-size: 12px;
+		height: 150px;
+	}
+	
+	.sale h1{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.sale h2:first-of-type {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.sale h2:last-of-type {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.sale a {
+	padding: 10px;
+	margin-top: 10px;
+	}
+	
+	.about h1 {
+		font-size: 25px;
+	}
+
+	.showPhoto.tent {
+		background-position: -1400px;
+	}
+
+	.gallery {
+		margin-bottom: 150px;
+	}
+	
+
+									/*Jackets ect small CSS*/
+
+	.tech {
+		font-size: 12px;
+	}
+	
+	.tech h2, p {
+		margin: 0px;
+		line-height: 20px;
+		padding: 5px;
+	}
+
+									/*Contact small CSS*/
+	.retailers {
+		margin: 5px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	.retailers h1 {
+		text-align: left;
+		margin: 5px;
+		font-size: 20px;
+	}
+
+									/*Product small CSS*/
+	.info {
+		height: auto;
+	}
+
+	.coat {
+		width: 100%;
+		margin: 0px;
+	}
+	
+	.describe {
+		margin: 0px;
+	}
+
+	.describe p {
+		margin-left: 0px;
+	}
+	
+	.showcase {
+		margin: 0px;
+		height: 50px;
+		margin-bottom: 150px;
+	}											
+}

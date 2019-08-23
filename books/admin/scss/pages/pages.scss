@@ -1,0 +1,28 @@
+.pages {
+  margin: 0 20%;
+  transition: all 2s ease;
+  @include breakpoint(sm) {
+    margin: 0 5%;
+  }
+  div.tr {
+    display: block;
+    padding: 10px;
+    overflow: auto;
+    margin: 2px 0;
+    background: rgba($copy-highlight, 0.7);
+    &:nth-child(even)
+    {
+      background: rgba($brand-primary, 0.7);
+    }
+    .td {
+      float: left;
+    }
+    .name {
+      width: 50%;
+    }
+    .edit, .delete {
+      width: 25%;
+      text-align: center;
+    }
+  }
+}

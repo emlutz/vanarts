@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  background: $background-highlight;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font;
+  font-size: $md-copy;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 100px 0 100px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: $hd-font;
+  color: $brand-primary;
+  font-family: $decorative-font;
+}
+
+h1 {font-size: $lg-hd;}
+h2 {font-size: $md-hd;}
+h3, h4, h5, h6 {font-size: $sm-hd;}
+
+a {
+  text-decoration: none;
+  color: $brand-secondary;
+  &:hover {
+    color: $background;
+  }
+  .uline {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+form {
+  input {
+    background: $background-highlight;
+    border: none;
+  }
+}
+
+div.intro {
+  margin-top: 30px;
+  text-align: center;
+  h3 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  p {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+    border-top: 1px solid #000222;
+    text-align: left;
+    line-height: 25px;
+    @media (max-width: 800px) {
+      width: 75%;
+    }
+  }
+  a {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: $background;
+    color: $brand-anchor;
+    border: 2px solid $background-highlight;
+    border-radius: 2px;
+    transition: all 0.75s;
+    &:hover {
+      border: 2px solid $brand-anchor;
+      text-decoration: none;
+      font-style: italic;
+      background: darken($background-highlight, 10%);
+    }
+    i:first-child {
+      padding: 0 2px 0 10px;
+    }
+  }
+}

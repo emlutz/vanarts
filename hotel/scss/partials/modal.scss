@@ -1,0 +1,40 @@
+#menuBox {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba($brand-anchor, 0.7);
+  .modal {
+    max-width: 600px;
+    margin: 100px 0 100px 0;
+    position: relative;
+    padding: 30px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .closeIcon {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      font-size: 30px;
+      color: $brand-secondary;
+      @include breakpoint(sm) {
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+  @include breakpoint(sm) {
+    width: 100vw;
+  }
+}
+#menuBox.active {
+  display: flex;
+}

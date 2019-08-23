@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  background-image: url("../imgs/back.jpg"); }
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: "Staatliches", cursive; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 34px; }
+
+h3, h4, h5, h6 {
+  font-size: 24px; }
+
+a {
+  text-decoration: none;
+  color: #363537; }
+  a:hover {
+    color: black; }
+
+ul {
+  list-style: none; }
+
+label {
+  display: block;
+  margin: 15px 0 0 0; }
+
+img.preview {
+  width: 100px; }
+
+input, select {
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: #b2e1ed;
+  border: 2px solid goldenrod; }
+
+input.shortText {
+  width: 60%; }
+
+textarea {
+  width: 90%;
+  height: 150px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: #b2e1ed;
+  border: 2px solid goldenrod; }
+
+input[type="submit"] {
+  background: #363537;
+  color: #f3f9d2; }
+  input[type="submit"]:hover {
+    background: black; }
+
+input[type="textarea"] {
+  width: 400px;
+  height: 100px; }
+
+div.btn {
+  margin: 20px 0; }
+  div.btn a {
+    border: 1px solid black;
+    padding: 10px; }
+
+p.success {
+  background: rgba(142, 243, 122, 0.8);
+  text-align: center;
+  padding: 20px; }
+
+.login {
+  background: rgba(178, 225, 237, 0.5);
+  height: 50vh;
+  position: relative;
+  top: 20%;
+  left: 0;
+  transition: all 4s ease; }
+  .login p.invalid {
+    color: #fa3a00; }
+  .login .inputArea {
+    padding: 20% 0 0 20%;
+    color: #f3f9d2; }
+    .login .inputArea input {
+      width: 200px;
+      height: 40px;
+      display: block;
+      margin: 10px 0 10px 0;
+      background: #b2e1ed;
+      border: 2px solid goldenrod; }
+    .login .inputArea input[type="submit"] {
+      background: #363537;
+      color: #f3f9d2; }
+      .login .inputArea input[type="submit"]:hover {
+        background: black; }
+    .login .inputArea input.valid {
+      border: 2px solid #009625; }
+    .login .inputArea input.invalid {
+      border: 2px solid #fa3a00; }
+  .login .loginBee {
+    position: absolute;
+    top: 20%;
+    right: -300px;
+    transform: translate(-600px); }
+    @media (max-width: 420px) {
+      .login .loginBee {
+        display: none; } }
+
+.lognav {
+  text-align: right;
+  background: rgba(54, 53, 55, 0.2); }
+  .lognav a.logout {
+    margin: 0 50px 0 0;
+    font-family: "Staatliches", cursive;
+    font-size: 30px; }
+
+.dash {
+  background: rgba(243, 249, 210, 0.8);
+  height: auto;
+  padding: 50px;
+  position: relative;
+  top: 20%;
+  left: 0;
+  transition: all 2s ease;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 420px) {
+    .dash {
+      grid-template-columns: 100%; } }
+  .dash .welcome {
+    margin: 0 10%; }
+  .dash .options {
+    margin: 5% 10%; }
+    .dash .options .option {
+      width: 250px;
+      max-width: 100%;
+      border: 1px solid black;
+      padding: 10px;
+      margin: 2px; }
+      .dash .options .option:hover {
+        border: 1px solid goldenrod; }
+      .dash .options .option a {
+        display: grid;
+        grid-template-columns: 80% 20%; }
+      .dash .options .option h2 {
+        font-size: 24px; }
+      .dash .options .option i {
+        font-size: 24px; }
+
+.pages {
+  margin: 0 20%;
+  transition: all 2s ease; }
+  @media (max-width: 420px) {
+    .pages {
+      margin: 0 5%; } }
+  .pages div.tr {
+    display: block;
+    padding: 10px;
+    overflow: auto;
+    margin: 2px 0;
+    background: rgba(178, 225, 237, 0.7); }
+    .pages div.tr:nth-child(even) {
+      background: rgba(218, 165, 32, 0.7); }
+    .pages div.tr .td {
+      float: left; }
+    .pages div.tr .name {
+      width: 50%; }
+    .pages div.tr .edit, .pages div.tr .delete {
+      width: 25%;
+      text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

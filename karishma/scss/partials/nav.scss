@@ -1,0 +1,66 @@
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 30px;
+  .menu {
+    #nav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0px;
+      left: 0px;
+      background-color: $brand-primary;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 260px;
+      a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 700;
+        color: $brand-secondary;
+        display: block;
+        transition: 0.8s;
+        &:hover {
+          color: lighten($brand-primary, 40%);
+        
+        }
+      }
+      .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      @media (max-height: 450px) {
+        padding-top: 15px;
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+    span {
+      font-size: 50px;
+      cursor: pointer;
+      color: $brand-secondary;
+      &:hover {
+        color: lighten($brand-primary, 40%);
+      
+      }
+    }
+  }
+  .logo {
+    img {
+      max-width: 150px;
+      transition: all 1s;
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }
+}

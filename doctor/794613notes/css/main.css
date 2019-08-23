@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 130%; }
+
+html {
+  font-size: 62.5%;
+  background-image: url("../imgs/beach.jpg");
+  background-attachment: fixed; }
+
+body {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: #003d52;
+  margin: 0 50px; }
+
+section {
+  background: rgba(255, 245, 225, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: "PT Sans", sans-serif; }
+
+h1 {
+  font-size: 42px; }
+
+h2 {
+  font-size: 34px; }
+
+h3, h4, h5, h6 {
+  font-size: 13px; }
+
+a {
+  text-decoration: none;
+  color: #003d52;
+  transition: all 0.5s; }
+  a:hover {
+    color: #fb4d46;
+    font-weight: 500; }
+
+input, label, textarea {
+  display: block;
+  border: none;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  font-family: "PT Serif", serif; }
+
+input[type='submit'] {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  background: #fb4d46;
+  color: #001627;
+  transition: all 0.5s; }
+  input[type='submit']:hover {
+    color: #fb4d46;
+    background: #001627;
+    border-radius: 5px; }
+
+.invalid {
+  color: red; }
+
+.login {
+  margin: 20px auto;
+  text-align: center; }
+  .login img {
+    display: block;
+    margin: 5px auto; }
+  .login a.nav {
+    display: inline-block;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid; }
+  .login .form {
+    width: 60%;
+    margin: 3% 20% 0 20%;
+    text-align: center; }
+
+.success {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: #A3C940;
+  font-size: 20px; }
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+  header .nav {
+    width: 50%; }
+    header .nav a {
+      text-align: right; }
+      header .nav a h4 {
+        margin: 20px 100px 0 0;
+        text-align: right;
+        font-size: 25px;
+        text-transform: uppercase; }
+  header .logo {
+    width: 50%; }
+    header .logo img {
+      margin: 0 0 0 10%; }
+
+.messages h1 {
+  text-align: center; }
+.messages form label, .messages form select, .messages form input {
+  display: inline;
+  padding: 10px; }
+.messages form label {
+  font-weight: 700; }
+.messages form input[type=submit] {
+  display: inline;
+  width: 75px; }
+.messages .tr {
+  display: block;
+  padding: 10px;
+  overflow: auto;
+  margin: 2px 0; }
+  @media (max-width: 1110px) {
+    .messages .tr {
+      overflow-x: auto; } }
+  .messages .tr:nth-child(even) {
+    background: #fffaf0; }
+  .messages .tr .td {
+    float: left;
+    word-wrap: break-word;
+    margin: 0 2px; }
+  .messages .tr .id, .messages .tr .delete {
+    width: 4%; }
+  .messages .tr .news {
+    width: 7%; }
+  .messages .tr .id, .messages .tr .news, .messages .tr .delete {
+    text-align: center; }
+  .messages .tr .name, .messages .tr .date {
+    width: 15%; }
+  .messages .tr .email {
+    width: 20%; }
+  .messages .tr .comment {
+    width: 32%; }
+
+.count {
+  text-align: center; }
+  .count p {
+    font-weight: 700; }
+  .count a {
+    margin: 5px;
+    font-weight: 700; }
+
+/*# sourceMappingURL=main.css.map */

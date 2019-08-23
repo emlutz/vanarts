@@ -1,0 +1,397 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 25px; }
+
+html {
+  font-size: 62.5%;
+  background: #f2f0e6; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 16px; }
+
+main.homeMain, main.gridMain, main.actionMain {
+  margin-top: 150px; }
+
+#hero {
+  background-position: bottom;
+  text-align: center; }
+  #hero h1, #hero h2 {
+    color: #f2f0e6; }
+  #hero h1 {
+    font-size: 34px;
+    padding: 50px 0 30px 0; }
+  #hero h2 {
+    font-size: 24px;
+    padding: 0 0 30px 0; }
+  @media (max-width: 768px) {
+    #hero {
+      background-repeat: no-repeat; }
+      #hero h1, #hero h2 {
+        margin: 10px 0 10px 0;
+        padding: 10px 0 10px 0;
+        font-size: 24px; } }
+
+#hero.shortHero {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400px;
+  font-family: "Lora", serif; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 34px; }
+
+h3, h4, h5, h6 {
+  font-size: 24px; }
+
+a {
+  text-decoration: none;
+  color: #322619;
+  transition: all 0.5s; }
+  a:hover {
+    color: #425da3; }
+
+header {
+  height: 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: #f2f0e6;
+  width: 100vw; }
+  @media (max-width: 420px) {
+    header {
+      display: block; }
+      header div.navLogo {
+        display: block;
+        text-align: center;
+        margin: 0 0 0 0; }
+        header div.navLogo img {
+          width: 200px;
+          margin: 20px; } }
+  header .navLogo {
+    margin: 0 75px 0 0; }
+  header .topNav ul {
+    list-style: none; }
+    header .topNav ul li {
+      float: left;
+      padding: 10px 15px; }
+      @media (max-width: 420px) {
+        header .topNav ul li {
+          padding: 0 10px; } }
+      header .topNav ul li a {
+        letter-spacing: 2px; }
+  header .navCta {
+    margin: 0 0 0 75px;
+    text-align: center;
+    padding: 10px; }
+    @media (max-width: 420px) {
+      header .navCta {
+        display: none; } }
+    header .navCta p {
+      margin: 0 0 20px 0; }
+      header .navCta p a {
+        margin: 10px; }
+    header .navCta a.donatePop {
+      background: #009966;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      display: block; }
+      header .navCta a.donatePop:hover {
+        color: #009966;
+        background: #faaf3b; }
+      header .navCta a.donatePop i {
+        padding: 0 0 0 10px; }
+
+footer {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #100c08;
+  color: #f2f0e6; }
+  footer .footCopy {
+    padding: 40px;
+    max-width: 60%; }
+    @media (max-width: 420px) {
+      footer .footCopy {
+        max-width: 95%; } }
+  footer .contact {
+    line-height: 30px;
+    padding: 40px 0 40px 40px; }
+    footer .contact a {
+      color: #f2f0e6; }
+      footer .contact a:hover {
+        color: #fd3a4a; }
+    footer .contact p a {
+      margin: 10px; }
+  footer .footCopy {
+    font-family: "Lora", serif;
+    font-size: 24px; }
+  @media (max-width: 420px) {
+    footer {
+      flex-flow: wrap; } }
+
+#donateBox {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(16, 12, 8, 0.7); }
+  #donateBox .modal {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f7e0c0;
+    color: #100c08;
+    position: relative;
+    padding: 30px; }
+    #donateBox .modal h2 {
+      margin: 0 0 10px 0; }
+    #donateBox .modal input, #donateBox .modal label, #donateBox .modal select {
+      display: block;
+      text-align: left; }
+    #donateBox .modal input, #donateBox .modal select {
+      height: 30px;
+      width: 100%;
+      background: #f2f0e6;
+      border: 1px solid #faaf3b;
+      margin: 0 0 10px 0; }
+    #donateBox .modal input[type=submit] {
+      height: 40px;
+      background: #009966;
+      color: white;
+      padding: 0 20px 0 20px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 1.5px;
+      font-weight: 700; }
+      #donateBox .modal input[type=submit]:hover {
+        color: #009966;
+        background: #faaf3b; }
+    #donateBox .modal .closeIcon {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      font-size: 30px;
+      color: #faaf3b; }
+  @media (max-width: 420px) {
+    #donateBox {
+      width: 100vw; } }
+
+#donateBox.active {
+  display: flex; }
+
+.homeMain #hero {
+  height: 60vh;
+  background-size: contain; }
+  @media (max-width: 768px) {
+    .homeMain #hero {
+      height: 50vh;
+      background-size: cover; } }
+  @media (max-width: 420px) {
+    .homeMain #hero {
+      height: auto; }
+      .homeMain #hero h1 {
+        margin-bottom: 150px; }
+      .homeMain #hero h2 {
+        display: none; } }
+.homeMain .link {
+  height: 50px; }
+  .homeMain .link li {
+    list-style: none; }
+    .homeMain .link li a {
+      color: #161f36;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      border: 2px solid #161f36;
+      font-weight: 700; }
+      .homeMain .link li a:hover {
+        color: #425da3;
+        border: 2px solid #425da3;
+        background: rgba(128, 149, 203, 0.3); }
+      @media (max-width: 420px) {
+        .homeMain .link li a {
+          color: #f2f0e6;
+          border: 2px solid #fd3a4a;
+          background: #fd3a4a; } }
+.homeMain h2 {
+  text-align: center;
+  padding: 20px; }
+.homeMain section {
+  text-align: center;
+  background: #f7e0c0;
+  margin: 2% 10%;
+  padding: 1% 0 2% 0; }
+  @media (max-width: 420px) {
+    .homeMain section h2 {
+      font-size: 24px; } }
+  .homeMain section a.donate {
+    display: block;
+    padding: 20px 40px;
+    color: #fd3a4a;
+    font-weight: 700;
+    border: 2px solid #fd3a4a;
+    background: rgba(253, 58, 74, 0.2); }
+    .homeMain section a.donate:hover {
+      color: #b60211;
+      border: 2px solid #b60211;
+      background: rgba(254, 159, 167, 0.4); }
+.homeMain .content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 0 30px 0; }
+  .homeMain .content .featureImage {
+    width: 50%;
+    padding: 0 20px 0 0; }
+    .homeMain .content .featureImage img {
+      max-width: 100%;
+      margin: 0 0 50px 0; }
+  .homeMain .content .featureCopy {
+    width: 50%;
+    padding: 0 0 0 20px;
+    line-height: 25px;
+    text-align: left; }
+    .homeMain .content .featureCopy p:first-child {
+      margin: 0 0 20px 0; }
+  @media (max-width: 420px) {
+    .homeMain .content {
+      flex-flow: wrap; }
+      .homeMain .content .featureImage {
+        width: 100%;
+        padding: 0 0 0 0; }
+      .homeMain .content .featureCopy {
+        width: 100%;
+        padding: 0 0 0 0; } }
+
+.gridMain {
+  margin: 0 auto; }
+  .gridMain .content {
+    margin: 2% 10%;
+    background: #f7e0c0; }
+    .gridMain .content .grid {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: top; }
+      .gridMain .content .grid .member {
+        width: 27%;
+        padding: 10px;
+        margin: 5px; }
+        .gridMain .content .grid .member img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover; }
+        .gridMain .content .grid .member p.member {
+          width: 100%;
+          padding: 5px 0; }
+          .gridMain .content .grid .member p.member:first-child {
+            font-size: 40px; }
+        @media (max-width: 768px) {
+          .gridMain .content .grid .member {
+            width: 40%; } }
+      @media (max-width: 420px) {
+        .gridMain .content .grid {
+          flex-flow: wrap; }
+          .gridMain .content .grid .member {
+            width: 100%; } }
+  .gridMain .link li {
+    list-style: none;
+    text-align: center; }
+    .gridMain .link li a {
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: 2px solid #161f36;
+      color: #161f36;
+      background: rgba(250, 175, 59, 0.6);
+      transition: all 1s;
+      font-weight: 700; }
+      .gridMain .link li a:hover {
+        margin: 0 0 10px 0;
+        color: #425da3;
+        background: rgba(250, 175, 59, 0.8); }
+  @media (max-width: 420px) {
+    .gridMain .link {
+      margin: 30px 0 0 0; } }
+
+.actionMain {
+  margin: 0 auto; }
+  .actionMain #hero {
+    background-position: center; }
+    .actionMain #hero h1 {
+      background: rgba(16, 12, 8, 0.2);
+      display: inline-block; }
+  .actionMain section.donate {
+    width: 80%;
+    margin: 0 auto; }
+    .actionMain section.donate .optionCopy {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin: 50px 0; }
+      .actionMain section.donate .optionCopy div.option {
+        width: 30%;
+        padding: 20px;
+        margin: 5px;
+        background: #f7e0c0; }
+        .actionMain section.donate .optionCopy div.option a {
+          display: block;
+          margin: 0 50px 10px 50px;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px 20px;
+          border: 2px solid #161f36;
+          color: #161f36;
+          transition: all 1s; }
+          @media (max-width: 768px) {
+            .actionMain section.donate .optionCopy div.option a {
+              margin: 0 0 0 0; }
+              .actionMain section.donate .optionCopy div.option a h3 {
+                font-size: 20px; } }
+          @media (max-width: 420px) {
+            .actionMain section.donate .optionCopy div.option a {
+              margin: 0 0 0 0; } }
+          .actionMain section.donate .optionCopy div.option a:hover {
+            margin: 0 0 10px 0;
+            color: #425da3; }
+      @media (max-width: 420px) {
+        .actionMain section.donate .optionCopy {
+          flex-flow: wrap; }
+          .actionMain section.donate .optionCopy div.option {
+            width: 100%; } }
+    .actionMain section.donate .optionImage {
+      text-align: center; }
+      .actionMain section.donate .optionImage img {
+        max-width: 75%; }
+    @media (max-width: 768px) {
+      .actionMain section.donate {
+        width: 90%; } }
+
+/*# sourceMappingURL=main.css.map */

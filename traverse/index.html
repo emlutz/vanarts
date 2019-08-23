@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="16x16" href="imgs/s16x16.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+		function sendForm() {
+			alert("Thanks for the message!");
+		}
+	</script>
+</head>
+<body>
+	
+	<header>
+		<span class="showIcon"></span>
+		<nav>
+			<a href="contact.html">Contact</a><a href="tents.html">Tents</a><a href="backpacks.html">Backpacks</a><a href="jackets.html">Jackets</a><a href="index.html">Home</a>
+		</nav>
+	</header>
+	
+	<main>
+		<div class="cover">
+			<div class="col-5">
+				<img class="cover" src="imgs/sale.jpg" alt="Swift Jacket">
+			</div>
+				
+			<div class="col-7 sale">
+				 <h2>Men's &amp; Women's Swift Jackets</h2>
+				 <h1>30% Off</h1>
+				 <h2>This weekend only!</h2>
+				 <a class="shop" href="jackets.html">Shop Jackets</a> 
+			</div>
+		</div>	
+		
+		<section class="col-12 about">
+			<h1>Traverse Outdoor Equipment</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus erat eget libero pretium dignissim. Nullam placerat accumsan lobortis. Sed vestibulum ultrices ante, at porttitor est fermentum eget. Quisque tristique venenatis laoreet. Maecenas quis erat laoreet, iaculis odio ut, dapibus turpis. Sed rutrum ultricies nulla. Praesent eget luctus ex. Phasellus dolor purus, condimentum a elementum quis, maximus ut ex. Aliquam molestie nibh sed risus mattis mollis. Vestibulum rhoncus urna sit amet leo luctus, non aliquet leo ultricies. Sed dapibus hendrerit viverra. Nam eu augue in lectus tincidunt sodales eu non ante.</p>
+		</section>
+		
+		<section class="categories row">
+			<div class="col-4 showPhoto jack">
+				<a class="link" href="jackets.html">See Jackets</a>
+			</div>
+			<div class="col-4 showPhoto back">
+				<a class="link" href="backpacks.html">See Backpacks</a>
+			</div>
+			<div class="col-4 showPhoto tent">	
+				<a class="link" href="tents.html">See Tents</a>
+			</div>
+		</section>	
+		
+		<div class="col-12 gallery">
+			<h1 class="col-12">Traverse In The Wild</h1>
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Go Wild Pack" href="imgs/backpackjump.jpg"><img src="imgs/backpackjumpsm.jpg" class="fit" alt="Go Wild Pack"></a>
+			</div>	
+			
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Guardian Coat" href="imgs/manjacket.jpg"><img src="imgs/manjacketsm.jpg" alt="Guardian Coat"></a>
+			</div>
+			
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Toaster Fleece" href="imgs/womenjacketjump.jpg"><img src="imgs/womenjacketjumpsm.jpg" alt="Toaster Fleece"></a>
+			</div>	
+			
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Cabin Tent" href="imgs/tentcliff.jpg"><img src="imgs/tentcliffsm.jpg" alt="Tent on a cliff"></a>
+			</div>
+
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Prepare Pack" href="imgs/backpackflowers.jpg"><img src="imgs/backpackflowerssm.jpg" alt="Prepare Pack"></a>
+			</div>	
+			
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Hover Tent" href="imgs/treetentsunset.jpg"><img src="imgs/treetentsunset.jpg" alt="Hover Tent"></a>
+			</div>	
+			
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Swift Jacket" href="imgs/manjacketstump.jpg"><img src="imgs/manjacketstumpsm.jpg" alt="Swift Jacket"></a>
+			</div>	
+			
+			<div class="pic col-3">
+				<a data-fancybox="gallery" data-caption="Swift Jacket" href="imgs/womenjacketgrey.jpg"><img src="imgs/womenjacketgreysm.jpg" alt="Swift Jacket"></a>
+			</div>	
+		</div>	
+
+	</main>
+	
+	<footer>
+	
+		<div class="links">
+			<a href="home.html">Home</a>
+			<a href="jackets.html">Jackets</a>
+			<a href="backpacks.html">Backpacks</a>
+			<a href="tents.html">Tents</a>
+			<a href="contact.html">Contact</a>
+			<p><i class="far fa-copyright"></i> 2018 Traverse</p>
+		</div>	
+		
+		<form>
+			<h1>Get In Touch</h1>
+			<p>Have questions or feedback for us? Please let us know what we can help you with:</p>
+
+			<div class="input">
+				<label>Name</label>
+				<input type="text" name="name">
+			</div>	
+
+			<div class="input">
+				<label>Email</label>
+				<input type="text" name="email">
+			</div>	
+
+			<div class="comment">
+				<label>Comment</label>
+				<input type="textarea" name="comment">
+			</div>
+
+			<div class="send">
+				<button onClick="sendForm()">Send Message</button>
+			</div>	
+		</form>
+		
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-pinterest-p"></i></a>
+
+		</div>	
+
+	</footer>
+	
+	<!--<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>-->
+
+	<!-- <a data-fancybox="gallery" href="imgs/tenttree.jpg"><img src="imgs/tenttree.jpg"></a><a data-fancybox="gallery" href="imgs/tenttree.jpg"><img src="imgs/tenttree.jpg"></a> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+</body>
+</html>

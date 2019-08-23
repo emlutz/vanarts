@@ -1,0 +1,73 @@
+header {
+  height: 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: $background;
+  width: 100vw;
+  @include breakpoint(sm) {
+    display: block;
+    div.navLogo {
+      display: block;
+      text-align: center;
+      margin: 0 0 0 0;
+      img {
+        width: 200px;
+        margin: 20px;
+      }
+    }
+  }
+  .navLogo {
+    margin: 0 75px 0 0;
+  }
+  .topNav {
+    ul {
+      list-style: none;
+      li {
+        float: left;
+        padding: 10px 15px;
+        @include breakpoint(sm) {
+          padding: 0 10px;
+          // border-bottom: 0.5px solid $brand-secondary;
+        }
+        a {
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  .navCta {
+    margin: 0 0 0 75px;
+    text-align: center;
+    padding: 10px;
+    @include breakpoint(sm) {
+      display: none;
+    }
+    p {
+      margin: 0 0 20px 0;
+      a {
+        margin: 10px;
+      }
+    }
+    a.donatePop {
+      background: $cta;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      display: block;
+      &:hover {
+        color: $cta;
+        background: $brand-extra;
+      }
+      i {
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+}
